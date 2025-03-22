@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Professional Website</title>
+  <style>
+    /* General body styling */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4; /* Light gray background for professionalism */
+      color: #333; /* Dark text for readability */
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Background image with blur effect */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://tse1.mm.bing.net/th?id=OIP.wM6A-21Le9sdg6HrZVZW9AHaHa&pid=Api&P=0&h=180'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px); /* Apply blur effect */
+      z-index: -1; /* Ensures background is behind content */
+    }
+
+    /* Header section */
+    header {
+      background-color: rgba(44, 62, 80, 0.8); /* Dark transparent background */
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    /* Tab buttons styling */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      background-color: #34495e; /* Darker blue-gray for tab background */
+    }
+
+    .tab-btn {
+      background-color: #3498db; /* Bright blue for buttons */
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+
+    .tab-btn:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+
+    /* Tab content styling */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab-content h2 {
+      color: #2c3e50; /* Dark blue-gray for headings */
+      font-size: 2em;
+    }
+
+    .tab-content p, .tab-content ul {
+      font-size: 1.2em;
+      color: #555; /* Medium gray text for paragraphs and lists */
+    }
+
+    /* Achievements list items */
+    .tab-content ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .tab-content ul li {
+      background-color: #ecf0f1; /* Light gray background for list items */
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #34495e; /* Matching dark gray footer */
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Show tab when active */
+    .active-tab {
+      display: block;
+    }
+
+    /* Link styling for contact section */
+    #contact a {
+      color: #3498db; /* Bright blue for links */
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Styling for the image in About Me section */
+    #about img {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 5px solid #3498db; /* Blue border around the image */
+    }
+
+    /* User Note Section */
+    .user-note {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-note h2 {
+      color: #2c3e50;
+      font-size: 2em;
+    }
+
+    .user-note textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+
+    .user-note button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 1.1em;
+      border-radius: 5px;
+    }
+
+    .user-note button:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Image -->
+  <div class="background"></div>
+
+  <header>
+    <h1>Welcome to My Professional Website</h1>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn" onclick="showTab('about')">About Me</button>
+    <button class="tab-btn" onclick="showTab('education')">Education</button>
+    <button class="tab-btn" onclick="showTab('marksheet')">Marksheets</button>
+    <button class="tab-btn" onclick="showTab('achievements')">Achievements</button>
+    <button class="tab-btn" onclick="showTab('contact')">Contact</button>
+    <button class="tab-btn" onclick="showTab('address')">Address</button>
+  </div>
+
+  <div class="tab-content" id="about">
+    <h2>About Me</h2>
+    <img src=https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/473410454_683033920819134_8057342370368032405_n.jpg?ccb=11-4&oh=01_Q5AaIXU4sfoJDNC_wIlMWc3HjyLX_ZFiFXxGlE7_jKLrylHe&oe=67EC0242&_nc_sid=5e03e0&_nc_cat=107 alt="John Doe's Picture">
+    <p>Hello! I'm Sumit Ghodke,I am student of BIGCE, solapur.           <li> A passionate web developer and technology enthusiast. I love coding, learning new technologies, and solving complex problems. In my free time, I enjoy reading books, playing video games, and exploring the latest trends in tech.</li> </p>
+  </div>
+
+  <div class="tab-content" id="education">
+    <h2>Education</h2>
+    <p>1o th passout from <strong>shri. mahatma basaveshwar school omerga</strong> </p>
+        <p>12 th passout from <strong>shri. chhatrapati shivaji college omerga</strong> </p>
+    <p>I have a Bachelor's degree in Computer Science from dbatu, lonere University. I graduated with honors and participated in various technical clubs and projects.</p>
+  </div>
+
+  <div class="tab-content" id="marksheet">
+    <h2>Marksheet</h2>
+    <p>Here is my marksheet with all my academic details:</p>
+    <ul>
+      <li>Math: A+</li>
+      <li>Science: A+</li>
+      <li>English: A+</li>
+      <li>History: A+</li>
+      
+    </ul>
+  </div>
+
+  <div class="tab-content" id="achievements">
+    <h2>Achievements</h2>
+    <p>I've won several awards in web development, including:</p>
+    <ul>
+      <li>Best Web Developer of 2026</li>
+      <li>First Place in Regional Coding Contest</li>
+      <li>Professional volleyball player</li>
+      <img src=https://img.freepik.com/premium-psd/certificate-volleyball_557262-9.jpg alt="Picture">
+    </ul>
+  </div>
+
+  <div class="tab-content" id="contact">
+    <h2>Contact</h2>
+    <p>You can contact me via email at <a href="sbghodke07@gmail.com"><strong>Tap to visit my gmain </strong></a>.</p>
+    <p>you can follow on INSTAGRAM at <a href="itz_sumit.g"><strong>TAP TO VISIT MY PROFILE</strong></a></p>
+  </div>
+
+  <div class="tab-content" id="address">
+    <h2>Address</h2>
+    <p><strong>OMERGA, ta.OMERGA, dist.DHARASHIV </strong></p>
+    <p>bharat ratna indira gandhi hostel,solapur</p>
+  </div>
+
+  <!-- User Note Section (Above Footer) -->
+  <div class="user-note">
+    <h2>Leave a Note/suggesition About Myself</h2>
+    <form id="note-form">
+      <textarea id="user-note" placeholder="Write your note here..."></textarea>
+      <br>
+      <button type="button" onclick="submitNote()">Submit Note</button>
+    </form>
+    <div id="note-display"></div>
+  </div>
+
+  <footer>
+    <p>&copy;sumit ghodke 2025. desined by sumit devploment company</p>
+  </footer>
+
+  <script>
+    // Function to show selected tab and hide others
+    function showTab(tabName) {
+      // Get all tab contents
+      var tabContents = document.querySelectorAll('.tab-content');
+      
+      // Hide all tab contents
+      tabContents.forEach(function(tabContent) {
+        tabContent.classList.remove('active-tab');
+      });
+
+      // Show the selected tab
+      var selectedTab = document.getElementById(tabName);
+      selectedTab.classList.add('active-tab');
+    }
+
+    // Set default tab to 'about'
+    document.addEventListener('DOMContentLoaded', function() {
+      showTab('about');
+    });
+
+    // Function to handle the note submission
+    function submitNote() {
+      var noteText = document.getElementById('user-note').value;
+      if (noteText.trim() !== "") {
+        document.getElementById('note-display').innerHTML = "<h3>Your Note:</h3><p>" + noteText + "</p>";
+        document.getElementById('note-form').reset(); // Reset form after submission
+      } else {
+        alert("Please write something before submitting.");
+      }
+    }
+  </script>
+</body>
+</html>
